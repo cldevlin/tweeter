@@ -1,0 +1,78 @@
+.all-tweets article {
+  border: 3px solid #545149;
+  padding: 10px;
+}
+
+.all-tweets article:hover {
+  box-shadow: 8px 8px rgba(64, 86, 161, 0.3);
+}
+
+.all-tweets article header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+  height: 60px;
+}
+
+/* name & icon */
+.all-tweets article header div {
+  display: flex;
+  /* margin-left: 15px; */
+}
+
+.all-tweets img {
+  width: 2em;
+}
+
+.all-tweets article header .name h3 {
+  font-weight: 300;
+}
+
+/* /////handle////// */
+.all-tweets article header h4 {
+  font-weight: 600;
+  color: #4056A1;
+  opacity: 0.3;
+  margin-right: 15px;
+  margin-top: 20px;
+}
+
+
+
+.all-tweets article p {
+  border-bottom: 3px solid #545149;
+  padding: 30px 15px 20px 15px;
+  /* padding-bottom: 20px;
+  padding-left: 15px; */
+  margin: auto;
+  font-weight: 600;
+}
+
+/* Footer */
+.all-tweets article footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6em;
+  margin: 0px 15px 10px 15px;
+  /* margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: ; */
+}
+
+.time {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.reactions a * {
+  /* display: flex; */
+  padding-left: 12px;
+  margin-top: 10px;
+  color: #4056A1;
+}
+
+.reactions *:hover {
+  color: rgb(201, 172, 9);
+}

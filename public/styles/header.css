@@ -1,0 +1,21 @@
+body > header {
+  /* position: absolute; */
+  display: flex;
+  height: 400px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c78d28;
+  background-image: url(http://www.transparenttextures.com/patterns/asfalt-light.png);
+  color: #FFF;
+  z-index: 0;
+}
+
+#avatar {
+  z-index: 1;
+}
+
+header div h2.header-name {
+  font-weight: 300;
+}

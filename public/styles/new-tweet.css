@@ -1,0 +1,49 @@
+form {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgba(0, 0, 0, 0);
+  padding: 1em;
+}
+
+/* tweet button and character count */
+form div {
+  display: flex;
+  justify-content: space-between;
+  font-family: Bungee;
+  margin-top: 1rem;
+}
+label {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+
+button {
+  background-color: #4056A1;
+  color: #FFF;
+  font-size: 20px;
+  padding: 0.5rem;
+}
+
+textarea {
+  border: none;
+  border-bottom: 3px solid #545149;
+  background-color: rgba(0, 0, 0, 0);
+  
+  
+  /* display : block;
+
+  padding : 10px;
+  margin  : 10px 0 0 -10px;
+  width   : 100%;
+  height  : 90%;
+
+  border-right: 1px solid;
+
+  overflow: auto; */
+}
+
+form div output .negative {
+  color: red;
+}
