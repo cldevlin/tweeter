@@ -5,9 +5,23 @@ nav {
   padding: 0em 1.5em;
   display: flex;
   flex-direction: row;
-
   justify-content: space-between;
   z-index: 1;
+  /* overflow: hidden; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+
+  /* position: sticky;
+  top: unset; */
+  /* width: max-content; */
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav span {

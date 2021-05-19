@@ -32,6 +32,7 @@
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+  <script type="text/javascript" src="/scripts/time-since-tweet.js"></script>
 </head>
 
 <body>
@@ -66,7 +67,7 @@
 
     <section class="new-tweet">
       <h2>Compose Tweet</h2>
-      <form action="/tweets/" method="POST">
+      <form action="/tweets" method="POST" id="post-tweet">
         <label for="tweet-text">What are you humming about?</label>
         <textarea class="tweet-box" name="text" id="tweet-text"></textarea>
         <div>
@@ -76,9 +77,9 @@
       </form>
     </section>
 
-    <section class="all-tweets">
+    <section class="all-tweets" id="tweets-container">
 
-      <article class="tweet">
+      <!-- <article class="tweet">
         <header>
           <div class="name">
             <img src="http://simpleicon.com/wp-content/uploads/rocket.png" alt="">
@@ -86,17 +87,15 @@
           </div>
           <h4>@SirIsaac</h4>
         </header>
-        <p>If I have seen further it is by standing on the shoulders of giants</p>
+        <p>xxxxxx</p>
         <footer>
-          <div class="time">10 days ago
-            <script>timeago.format(1473245023718);</script>
-          </div>
+          <div class="time"><span class="need_to_be_rendered" datetime="2016-07-07T09:24:17Z">July 07, 2016</span></div>
           <div class="reactions">
             <a href=""><i class="fas fa-flag"></i></a>
             <a href=""><i class="fas fa-retweet"></i></a>
             <a href=""><i class="fas fa-heart"></i></a>
           </div>
-        </footer>
+        </footer> -->
       </article>
 
     </section>
