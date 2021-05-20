@@ -56,16 +56,21 @@
   </header>
 
 
-  <!-- <main>
-    <div>
-      Hello!
-    </div>
-  </main> -->
-
   <!-- Page-specific (main) content here -->
   <main class="container">
 
+
     <section class="new-tweet">
+      <div class="error-messages">
+        <div id="empty-tweet">
+          <i class='fas fa-exclamation-triangle'></i>
+          &nbsp;&nbsp;&nbsp;Cannot post an empty tweet!
+        </div>
+        <div id="too-long">
+          <i class='fas fa-exclamation-triangle'></i>
+          &nbsp;&nbsp;&nbsp;Too many characters!
+        </div>
+      </div>
       <h2>Compose Tweet</h2>
       <form action="/tweets" method="POST" id="post-tweet">
         <label for="tweet-text">What are you humming about?</label>
@@ -79,34 +84,9 @@
 
     <section class="all-tweets" id="tweets-container">
 
-      <!-- <article class="tweet">
-        <header>
-          <div class="name">
-            <img src="http://simpleicon.com/wp-content/uploads/rocket.png" alt="">
-            <h3>Newton</h3>
-          </div>
-          <h4>@SirIsaac</h4>
-        </header>
-        <p>xxxxxx</p>
-        <footer>
-          <div class="time"><span class="need_to_be_rendered" datetime="2016-07-07T09:24:17Z">July 07, 2016</span></div>
-          <div class="reactions">
-            <a href=""><i class="fas fa-flag"></i></a>
-            <a href=""><i class="fas fa-retweet"></i></a>
-            <a href=""><i class="fas fa-heart"></i></a>
-          </div>
-        </footer> -->
-      </article>
 
     </section>
 
-    <h2>blahblah</h2>
-    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam deserunt dolores repellat incidunt vero
-      provident fugiat sit, sint debitis quibusdam temporibus, vel eligendi eos aut mollitia nobis rem maiores sapiente.
-    </div>
-    <p>More blah Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quia dolor molestiae ad vel illum
-      explicabo nulla nostrum ipsam iusto quam placeat atque provident. Fuga reprehenderit officiis tempora eveniet id!
-    </p>
   </main>
 
 </body>

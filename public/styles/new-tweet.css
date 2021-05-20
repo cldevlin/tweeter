@@ -18,7 +18,7 @@ label {
   font-size: 19px;
 }
 
-
+/* add classes */
 button {
   background-color: #4056A1;
   color: #FFF;
@@ -30,20 +30,23 @@ textarea {
   border: none;
   border-bottom: 3px solid #545149;
   background-color: rgba(0, 0, 0, 0);
-  
-  
-  /* display : block;
-
-  padding : 10px;
-  margin  : 10px 0 0 -10px;
-  width   : 100%;
-  height  : 90%;
-
-  border-right: 1px solid;
-
-  overflow: auto; */
 }
 
 form div output .negative {
   color: red;
+}
+
+main section div.error-messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main section div.error-messages div {
+  display: none;
+  border: 3px solid red;
+  color: red;
+  font-weight: 600;
+	margin: 10px auto;
+	padding: 15px 30px 15px 15px;
 }

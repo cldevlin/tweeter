@@ -28,7 +28,6 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
  
-
  main {
    margin: 10px auto;
    display: flex;
@@ -37,11 +36,5 @@ body {
    justify-content: space-around;
    align-items: space-around;
    background-color: #f4f1ec;
-
- }
-
- .container div {
-   display: flex;
-   align-items: center;
  }
 
