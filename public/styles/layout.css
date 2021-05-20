@@ -38,3 +38,16 @@ body {
    background-color: #f4f1ec;
  }
 
+@media (min-width: 1024px) {
+  body {
+    flex-direction: row;;
+  }
+
+
+
+  main {
+    margin-left: 50px;
+    margin-top: 200px;
+  }
+
+}
