@@ -15,3 +15,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Screenshot of tablet view"](https://github.com/cldevlin/tweeter/blob/master/docs/tweeter-tablet.png?raw=true)
+!["Screenshot of writing tweet"](https://github.com/cldevlin/tweeter/blob/master/docs/tweeter-typing.png?raw=true)
+!["Screenshot of posted tweet"](https://github.com/cldevlin/tweeter/blob/master/docs/tweeter-homepage.png?raw=true)
