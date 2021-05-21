@@ -1,48 +1,45 @@
-form {
-  display: flex;
+#post-tweet {
+  display: none;
   flex-direction: column;
+  /* visibility: hidden; */
 
   background-color: rgba(0, 0, 0, 0);
   padding: 1em;
 }
 
 /* tweet button and character count */
-form div {
+#post-tweet div {
   display: flex;
   justify-content: space-between;
   font-family: Bungee;
   margin-top: 1rem;
 }
-label {
+
+#post-tweet label {
   font-weight: 600;
   font-size: 19px;
 }
 
-/* add classes */
-button {
+.tweet-button {
   background-color: #4056A1;
   color: #FFF;
   font-size: 20px;
   padding: 0.5rem;
 }
 
-textarea {
+#tweet-text {
   border: none;
   border-bottom: 3px solid #545149;
   background-color: rgba(0, 0, 0, 0);
 }
 
-form div output .negative {
-  color: red;
-}
-
-main section div.error-messages {
+.error-messages-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-main section div.error-messages div {
+.error-messages {
   display: none;
   border: 3px solid red;
   color: red;

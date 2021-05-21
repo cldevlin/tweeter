@@ -1,9 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -13,15 +7,15 @@ const escape = function (str) {
 const createTweetElement = function (tweetObj) {
   const $tweet = $(`<article class="tweet">
     <header>
-      <div class="name">
-        <img src="${tweetObj.user.avatars}" alt="">
-        <h3>${tweetObj.user.name}</h3>
+      <div class="tweet-top-left">
+        <img class="avatar" src="${tweetObj.user.avatars}" alt="">
+        <h3 class="user-name">${tweetObj.user.name}</h3>
       </div>
-      <h4>${tweetObj.user.handle}</h4>
+      <h4 class="handle">${tweetObj.user.handle}</h4>
     </header>
     <p>${escape(tweetObj.content.text)}</p>
     <footer>
-      <div class="time"><span class="need_to_be_rendered" datetime="${tweetObj.created_at}">${tweetObj.created_at}</span></div>
+      <div class="time"><span class="need_to_be_rendered" datetime="${tweetObj.created_at}">${timeago.format(tweetObj.created_at)}</span></div>
       <div class="reactions">
         <a href=""><i class="fas fa-flag"></i></a>
         <a href=""><i class="fas fa-retweet"></i></a>
@@ -48,10 +42,16 @@ const loadTweets = function () {
 $(document).ready(function () {
   loadTweets();
 
+  $('.new-tweet-link').on('click', function () {
+    $('#post-tweet').slideDown("slow");
+    $('#post-tweet').css("display", "flex");
+  });
+
+  // handles new tweet post
   $('#post-tweet').submit(function (event) {
     event.preventDefault();
-    if ($('.error-messages *').is(":visible")) {
-      $('.error-messages *').hide();
+    if ($('.error-messages-container *').is(":visible")) {
+      $('.error-messages-container *').hide();
     }
 
     if (!$('#tweet-text').val()) {
@@ -70,6 +70,8 @@ $(document).ready(function () {
       data
     }).then(function () {
       $('#tweet-text').val("");
+      $('.counter').text(140);
+      $('#post-tweet').css("display", "none");
       loadTweets(data);
     });
   });

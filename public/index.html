@@ -32,7 +32,6 @@
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-  <script type="text/javascript" src="/scripts/time-since-tweet.js"></script>
 </head>
 
 <body>
@@ -40,9 +39,12 @@
   <!-- Top nav bar (fixed) -->
   <nav>
     <span>tweeter</span>
-    <div>
-      <p><strong>Write</strong> a new tweet</p>
-      <i class="fas fa-angle-double-down" id="double-arrow"></i>
+
+    <div class="nav-links">
+      <button class="new-tweet-link" type="button">
+        <p><strong>Write</strong> a new tweet</p>
+        <i class="fas fa-angle-double-down" id="double-arrow"></i>
+      </button>
     </div>
   </nav>
   <header>
@@ -61,22 +63,22 @@
 
 
     <section class="new-tweet">
-      <div class="error-messages">
-        <div id="empty-tweet">
+      <div class="error-messages-container">
+        <div class="error-messages" id="empty-tweet">
           <i class='fas fa-exclamation-triangle'></i>
           &nbsp;&nbsp;&nbsp;Cannot post an empty tweet!
         </div>
-        <div id="too-long">
+        <div class="error-messages" id="too-long">
           <i class='fas fa-exclamation-triangle'></i>
           &nbsp;&nbsp;&nbsp;Too many characters!
         </div>
       </div>
-      <h2>Compose Tweet</h2>
+      <!-- <h2>Compose Tweet</h2> -->
       <form action="/tweets" method="POST" id="post-tweet">
         <label for="tweet-text">What are you humming about?</label>
         <textarea class="tweet-box" name="text" id="tweet-text"></textarea>
         <div>
-          <button type="submit">Tweet</button>
+          <button type="submit" class="tweet-button">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
