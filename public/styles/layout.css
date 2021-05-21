@@ -29,9 +29,9 @@ body {
  */
  
  main {
+   width: 90vw;
    margin: 10px auto;
    display: flex;
-   width: 90vw;
    flex-direction: column;
    justify-content: space-around;
    align-items: space-around;
@@ -40,14 +40,13 @@ body {
 
 @media (min-width: 1024px) {
   body {
-    flex-direction: row;;
+    flex-direction: row;  
   }
 
-
-
   main {
-    margin-left: 50px;
+    margin-left: 1em;
     margin-top: 200px;
+    margin-right: 3em;
   }
 
 }
